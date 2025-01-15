@@ -51,7 +51,7 @@ module.exports = {
   devServer: {
     static: path.join(__dirname, "dist"),
     compress: true,
-    port: 9200,
+    port: 9300,
     hot: true,
     liveReload: true,
     watchFiles: ["src/**/*"],
