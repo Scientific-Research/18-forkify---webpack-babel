@@ -1,0 +1,25 @@
+{
+  "name": "18-forkify",
+  "version": "1.0.0",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "setup": "pm2 start --name mk-forkify-recipe-search-application npm -- start",
+    "deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart mk-forkify-recipe-search-application &&pm2 save",
+    "build": "parcel build ./src/index.html --dist-dir ./dist"
+  },
+  "keywords": [],
+  "author": "Maximilian",
+  "license": "ISC",
+  "description": "Recipe application",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3",
+    "svgo": "^3.3.2"
+  },
+  "dependencies": {
+    "core-js": "^3.39.0",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.14.1"
+  }
+}
