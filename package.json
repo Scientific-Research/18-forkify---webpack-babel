@@ -1,25 +1,36 @@
 {
   "name": "18-forkify",
   "version": "1.0.0",
-  "default": "index.html",
+  "description": "Recipe application",
+  "main": "script.js",
   "scripts": {
-    "start": "parcel ./src/index.html",
+    "dev": "webpack serve --open",
     "setup": "pm2 start --name mk-forkify-recipe-search-application npm -- start",
+    "start": "npm run build && webpack serve --open",
     "deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart mk-forkify-recipe-search-application &&pm2 save",
-    "build": "parcel build ./src/index.html --dist-dir ./dist"
+    "build": "webpack"
   },
   "keywords": [],
-  "author": "Maximilian",
+  "author": "",
   "license": "ISC",
-  "description": "Recipe application",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.13.3",
-    "parcel": "^2.13.3",
-    "svgo": "^3.3.2"
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "sass": "^1.83.4",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
   },
   "dependencies": {
     "core-js": "^3.39.0",
     "fractional": "^1.0.0",
+    "html-webpack-plugin": "^5.6.3",
     "regenerator-runtime": "^0.14.1"
   }
 }

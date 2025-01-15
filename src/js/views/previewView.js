@@ -1,5 +1,7 @@
 import View from "./View.js";
-import icons from "url:../../img/icons.svg"; // Parcel 2 THE NEW PATH in here!
+// import icons from "url:../../img/icons.svg"; // Parcel 2 THE NEW PATH in here!
+
+import icons from "../../img/icons.svg"; // Parcel 2 THE NEW PATH in here!
 
 // NOTE: The resultsView.js and bookmarksView.js are the same but the only difference is _parentElement and _errorMessage. And the main functionality to generate the markup is essentially the same for both of them and in order to encapsulate them, we put this functionality in a separate Child class called previewView.js.
 

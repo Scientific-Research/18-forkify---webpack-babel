@@ -1,5 +1,6 @@
 import View from "./View.js";
-import icons from "url:../../img/icons.svg"; // Parcel 2 THE NEW PATH in here!
+// import icons from "url:../../img/icons.svg"; // Parcel 2 THE NEW PATH in here!
+import icons from "../../img/icons.svg"; // Parcel 2 THE NEW PATH in here!
 
 // We have to use extends because ResultView class is a child of View class as parent!
 class PaginationView extends View {

@@ -8,7 +8,10 @@ import View from "./View.js";
 // import icons from "../img/icons.svg"; // Parcel 1
 // NOTE: We have to add type="module" in script in html file. In this case, the following import will work in Parcel!
 // import icons from "url:../img/icons.svg"; // Parcel 2 THE OLD PATH as it was in controller
-import icons from "url:../../img/icons.svg"; // Parcel 2 THE NEW PATH in here!
+// import icons from "url:../../img/icons.svg"; // Parcel 2 THE NEW PATH in here!
+
+import icons from "../../img/icons.svg"; // Parcel 2 THE NEW PATH in here!
+
 import { Fraction } from "fractional";
 console.log(Fraction);
 

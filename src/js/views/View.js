@@ -1,4 +1,6 @@
-import icons from "url:../../img/icons.svg"; // Parcel 2 THE NEW PATH in here!
+// import icons from "url:../../img/icons.svg"; // Parcel 2 THE NEW PATH in here!
+
+import icons from "../../img/icons.svg"; // Parcel 2 THE NEW PATH in here!
 
 // This class is a parent class and has all the properties and methods which are common between all the View classes as child classes(recipeView.js, resultsView.js and searchView.js)
 // We export the class itself, because we don't want to create any instance from the view!

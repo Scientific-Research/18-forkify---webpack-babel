@@ -1,3 +1,5 @@
+import "../sass/main.scss";
+
 import * as model from "./model.js";
 import { MODAL_CLOSE_SEC } from "./config.js";
 // In Parcel we can import more than just JS files! we can import all kinds of assets including images!
